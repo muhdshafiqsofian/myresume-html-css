@@ -1,0 +1,117 @@
+:root {
+   font-family: Arial, sans-serif;
+   background-color: #FFF;
+   font-size: 1rem;
+   font-weight: 500;
+   --title-size: 1.5em;
+   --body-size: 1.3em;
+   --body2-size: 1em;
+
+   body {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;  
+
+      header {
+         width: 85%;
+         margin: 20px 0 0 0;
+         padding: 20px 0;
+         text-align: center;
+         border-bottom: 1px solid #888;
+         .name {
+            font-size: var(--title-size);
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: normal;
+         }
+         .title {
+            font-size: var(--body-size);
+            line-height: 1.2em;
+         }
+         .contact {
+            display: inline-flex;
+            gap: 15px;
+         }
+      }
+
+      section, .hashtag-1 {
+         width: 85%;
+         padding: 10px 0;
+         border-bottom: 1px solid #888;
+         .title {
+            text-align: start;
+            font-size: var(--body-size);
+            font-weight: 700;
+         }
+         .grid-container {
+            /* padding: 10px 0; */
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 10px; 
+            grid-auto-columns: auto;
+         }
+         .grid-item {
+            font-size: var(--body2-size);
+            padding: 5px 0;
+            text-align: justify;
+         }
+         .grid-item:nth-child(3), .grid-item:nth-child(6) {
+            text-align: end;
+         }
+      }
+      .hashtag-2, .hashtag-3 {
+         padding: 10px 0;
+         .grid-container {
+            grid-template-columns: 1fr 2fr;
+         }
+      }
+      .hashtag-3 {
+         .grid-item {
+            ul {
+               list-style: none;
+               padding: 5px 0;
+               margin: 0;
+            }
+         }
+      }
+      .hashtag-4 {
+         .grid-container {
+            grid-template-columns: repeat(5, 1fr);
+         }
+         .grid-item:nth-child(3) {
+            text-align: start;
+         }
+      }
+
+      footer {
+         width: 85%;
+         padding: 10px 0;
+         border-bottom: 1px solid #888;
+         .title {
+            text-align: start;
+            font-size: var(--body-size);
+            font-weight: 700;
+         }
+         .grid-container {
+            /* padding: 10px 0; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px; 
+            grid-auto-columns: auto;
+         }
+         .grid-item {
+            font-size: var(--body2-size);
+            padding: 5px 0;
+            text-align: justify;
+            ul {
+               list-style: none;
+               padding: 5px 0;
+               margin: 0;
+            }
+         }
+      }
+   }
+}
