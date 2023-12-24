@@ -1,4 +1,4 @@
-# My Resume in HTML & CSS
+# My Resume in HTML & CSS (<a href="https://muhdshafiqsofian.github.io/myresume-html-css/" target="_blank">Preview Live!</a>)
 Hey yoo! This is a just a long weekend project to refresh my fundamentals of HTML & CSS.
 
 My end **Goals** is to create my own portfolio web page. So, I take this as a kickstart to push me out to start the project.
@@ -12,4 +12,3 @@ My end **Goals** is to create my own portfolio web page. So, I take this as a ki
 <center>
    <img src="./images/my_resume_v1.0.jpg" width="50%" center>
 </center>
-
